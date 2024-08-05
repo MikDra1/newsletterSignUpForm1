@@ -188,6 +188,10 @@ h2 {
   display: none;
 }
 
+.email {
+    font-weight: bold;
+}
+
 @media (min-width: 600px) {
   body {
     background-color: var(--Charcoal-Grey);
@@ -223,13 +227,32 @@ h2 {
     margin-top: 15px;
   }
 
-  .btn--subscribe {
+  .btn {
     transition: all 0.3s;
   }
 
-  .btn--subscribe:hover {
+  .btn:hover {
     background-color: var(--Tomato);
     box-shadow: 0rem 0.5rem 1rem var(--Tomato);
+  }
+
+  .success {
+    margin-top: 0;
+    inset: auto;
+    position: static;
+    border-radius: 25px;
+    padding: 50px;
+    width: 550px;
+  }
+
+  .btn--dismiss {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 2.75rem;
   }
 }
 
