@@ -4,6 +4,7 @@ const successMessage = document.querySelector(".success");
 const main = document.querySelector(".main");
 const formInput = document.querySelector(".form__input");
 const invalidInput = document.querySelector(".invalid");
+const emailSpan = document.querySelector('.email')
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -15,6 +16,7 @@ form.addEventListener("submit", function (e) {
 
   successMessage.classList.add("succesDisplay");
   main.style.display = "none";
+  emailSpan.textContent = formInput.value;
   formInput.value = "";
 });
 
